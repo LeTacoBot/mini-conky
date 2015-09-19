@@ -1,0 +1,33 @@
+background yes
+use_xft yes
+xftfont Liberation Mono:size=16
+xftalpha 1
+update_interval 1.0
+total_run_times 0
+own_window yes
+own_window_transparent yes
+own_window_type desktop
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_colour white
+double_buffer yes
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color 999999
+alignment top_left
+maximum_width 1000
+minimum_size 0 0
+gap_x 30
+gap_y 20
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale no
+ 
+TEXT
+CPU1:    ${voffset 2}${cpubar cpu1 16,150}${voffset -1} ${cpu cpu1}%
+CPU2:    ${voffset 2}${cpubar cpu2 16,150}${voffset -1} ${cpu cpu2}%
+RAM:     ${voffset 2}${membar 16,150}${voffset -1} ${memperc}%
+Swap:    ${voffset 2}${swapbar 16,150}${voffset -1} ${swapperc}%
+Battery: ${voffset 2}${battery_bar 16,150}${voffset -1} ${battery_percent}%
