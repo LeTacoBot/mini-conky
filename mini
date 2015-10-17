@@ -14,7 +14,7 @@ draw_shades no
 draw_outline no
 draw_borders no
 draw_graph_borders no
-default_color 999999
+default_color 000000
 alignment top_left
 maximum_width 1000
 minimum_size 0 0
@@ -31,3 +31,5 @@ CPU2:    ${voffset 2}${cpubar cpu2 16,150}${voffset -1} ${cpu cpu2}%
 RAM:     ${voffset 2}${membar 16,150}${voffset -1} ${memperc}%
 Swap:    ${voffset 2}${swapbar 16,150}${voffset -1} ${swapperc}%
 Battery: ${voffset 2}${battery_bar 16,150}${voffset -1} ${battery_percent}%
+Uptime:  ${voffset 2}${uptime}${voffset -1}
+Temp:    ${voffset 2}${acpitemp} C${voffset -1}
